@@ -1,7 +1,7 @@
 body {
   margin: 0;
 }
-
+/*Basic Homepage styling*/
 #home {
   background-image: url(Images/homePage.png);
   background-size: cover;
@@ -11,6 +11,7 @@ body {
   width: 100%;
 }
 
+/*Basic location page styling*/
 #location {
   background-image: url(Images/pages.png);
   background-size: cover;
@@ -20,6 +21,7 @@ body {
   width: 100%;
 }
 
+/*Basic rooms page styling*/
 #rooms {
   background-image: url(Images/pages.png);
   background-size: cover;
@@ -29,6 +31,7 @@ body {
   width: 100%;
 }
 
+/*Basic info page styling*/
 #info {
   background-image: url(Images/infoPage.png);
   background-size: cover;
@@ -38,6 +41,7 @@ body {
   width: 100%;
 }
 
+/*Basic navigation box container styling*/
 #navBox {
   height: 60%;
   width: 20%;
@@ -57,24 +61,27 @@ body {
   justify-content: center;
 }
 
+/*Basic individual navigation boxes styling*/
 .navigation {
   text-align: center;
   border: solid 2px;
   border-radius: 5px;
   padding: 20px;
-}
-
-.navigation {
   text-decoration: none;
   color: #000;
 }
 
-a:hover {
-  background-color: #0097b2;
-}
-
+/*Navigation text hover*/
 .navigation:hover {
   transform: scale(1.2);
   transition: 0.5s;
   color: #c1ff72;
+  background-color: #0097b2;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  padding: 30px;
+  text-decoration: underline;
 }
