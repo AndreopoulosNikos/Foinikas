@@ -41,7 +41,7 @@ body {
 #navBox {
   height: 60%;
   width: 20%;
-  min-width: 200px;
+  min-width: 270px;
   max-width: 270px;
   background-color: #81c7d4;
   position: absolute;
@@ -59,4 +59,22 @@ body {
 
 .navigation {
   text-align: center;
+  border: solid 2px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.navigation {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  background-color: #0097b2;
+}
+
+.navigation:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: #c1ff72;
 }
