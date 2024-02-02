@@ -23,7 +23,7 @@ function checkScrolling() {
     const headingPosition = heading.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    if (headingPosition < windowHeight / 1.5) {
+    if (headingPosition < windowHeight / 1.1) {
       heading.classList.add("animated");
     } else {
       heading.classList.remove("animated");
