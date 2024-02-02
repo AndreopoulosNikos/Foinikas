@@ -79,9 +79,28 @@ body {
   background-color: #0097b2;
 }
 
+/*Line under heading*/
+.line {
+  border-top: 3px solid black;
+  min-width: 270px;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+}
+
+/*Heading Style*/
 h1 {
   margin: 0;
   text-align: center;
-  padding: 30px;
-  text-decoration: underline;
+  padding-top: 20px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+/*Heading Animation*/
+.animated {
+  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }

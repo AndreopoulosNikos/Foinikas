@@ -15,3 +15,22 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+// add transition effect on scroll on headings
+const animateHeading = document.querySelectorAll("h1");
+function checkScrolling() {
+  animateHeading.forEach(function (heading) {
+    const headingPosition = heading.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (headingPosition < windowHeight / 1.5) {
+      heading.classList.add("animated");
+    } else {
+      heading.classList.remove("animated");
+    }
+  });
+}
+
+checkScrolling();
+
+window.addEventListener("scroll", checkScrolling);
