@@ -106,3 +106,9 @@ h1 {
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   transition-delay: 0.3s;
 }
+
+.carouselContainer {
+  display: flex;
+  height: 60%;
+  margin: 50px;
+}
