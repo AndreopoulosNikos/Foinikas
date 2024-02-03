@@ -121,6 +121,9 @@ h1 {
   #home {
     background-image: url(Images/homeMobile.png);
     background-attachment: local;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #location {
