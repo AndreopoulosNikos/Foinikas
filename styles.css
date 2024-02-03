@@ -120,18 +120,22 @@ h1 {
 @media screen and (max-width: 500px) {
   #home {
     background-image: url(Images/homeMobile.png);
+    background-attachment: local;
   }
 
   #location {
     background-image: url(Images/pagesMobile.png);
+    background-attachment: local;
   }
 
   #rooms {
     background-image: url(Images/pagesMobile.png);
+    background-attachment: local;
   }
 
   #info {
     background-image: url(Images/infoMobile.png);
+    background-attachment: local;
   }
 
   #navBox {
