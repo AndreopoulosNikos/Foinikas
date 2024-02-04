@@ -165,7 +165,6 @@ and be able to reposition them accordingly*/
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {
     opacity: 0;
