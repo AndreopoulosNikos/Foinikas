@@ -34,3 +34,73 @@ function checkScrolling() {
 checkScrolling();
 
 window.addEventListener("scroll", checkScrolling);
+
+//Adding slideshow functionality
+let currentSlideLoc = 1;
+let currentSlideRooms = 1;
+
+const slidesImages = document.querySelectorAll(".slidesImg");
+
+const nextButton = document.querySelectorAll(".next");
+const prevButton = document.querySelectorAll(".previous");
+
+const imageLoc = document.querySelector("#locImg");
+const imageRooms = document.querySelector("#roomsImg");
+
+function addSlideIndex(buttonId, direction) {
+  if (buttonId === "nextLoc" || buttonId === "prevLoc") {
+    if (currentSlideLoc == 6 && direction == 1) {
+      currentSlideLoc = 1;
+    } else if (currentSlideLoc == 1 && direction == -1) {
+      currentSlideLoc = 6;
+    } else {
+      currentSlideLoc += direction;
+    }
+  } else if (buttonId === "nextRoom" || buttonId === "prevRoom") {
+    if (currentSlideRooms == 6 && direction == 1) {
+      currentSlideRooms = 1;
+    } else if (currentSlideRooms == 1 && direction == -1) {
+      currentSlideRooms = 6;
+    } else {
+      currentSlideRooms += direction;
+    }
+  }
+}
+
+nextButton.forEach(function (element) {
+  element.addEventListener("click", function () {
+    addSlideIndex(element.id, 1);
+    setImageLoc(element.id);
+    console.log(element.id);
+    console.log(currentSlideLoc);
+    console.log(currentSlideRooms);
+  });
+});
+
+prevButton.forEach(function (element) {
+  element.addEventListener("click", function () {
+    addSlideIndex(element.id, -1);
+    setImageLoc(element.id);
+    console.log(element.id);
+    console.log(currentSlideLoc);
+    console.log(currentSlideRooms);
+  });
+});
+
+function setImageLoc(buttonId) {
+  if (buttonId === "nextLoc" || buttonId === "prevLoc") {
+    let imageLocSource = "/Images/dice" + currentSlideLoc + ".png";
+    imageLoc.setAttribute("src", imageLocSource);
+    imageLoc.classList.add("fade");
+    setTimeout(() => {
+      imageLoc.classList.remove("fade");
+    }, 1500);
+  } else if (buttonId === "nextRoom" || buttonId === "prevRoom") {
+    let imageRoomsSource = "/Images/dice" + currentSlideRooms + ".png";
+    imageRooms.setAttribute("src", imageRoomsSource);
+    imageRooms.classList.add("fade");
+    setTimeout(() => {
+      imageRooms.classList.remove("fade");
+    }, 1500);
+  }
+}

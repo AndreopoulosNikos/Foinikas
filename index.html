@@ -6,12 +6,6 @@
     <title>Foinikas Apartment for Rent</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.jpg" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <!-- Home Page -->
@@ -34,23 +28,31 @@
     <div id="location">
       <h1>Τοποθεσία</h1>
       <div class="line"></div>
-      <div class="carouselContainer"></div>
+      <div class="slidesContainer">
+        <div class="slides">
+          <img class="slidesImg" id="locImg" src="Images/dice1.png" alt="" />
+          <a class="next" id="nextLoc">&#10095;</a>
+          <a class="previous" id="prevLoc">&#10094;</a>
+        </div>
+      </div>
     </div>
     <!-- Rooms Page -->
     <div id="rooms">
       <h1>Δωμάτια</h1>
       <div class="line"></div>
+      <div class="slidesContainer">
+        <div class="slides">
+          <img class="slidesImg" id="roomsImg" src="Images/dice1.png" alt="" />
+          <a class="next" id="nextRoom">&#10095;</a>
+          <a class="previous" id="prevRoom">&#10094;</a>
+        </div>
+      </div>
     </div>
     <!-- Info Page -->
     <div id="info">
       <h1>Στοιχεία Επικοινωνίας</h1>
       <div class="line"></div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
     <script src="index.js"></script>
   </body>
 </html>

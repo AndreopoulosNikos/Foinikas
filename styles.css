@@ -41,7 +41,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  height: 100dvh;
+  height: 60dvh;
   width: 100%;
 }
 
@@ -110,11 +110,69 @@ h1 {
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   transition-delay: 0.3s;
 }
+/*Adjusting slideshow image so they it can scale and not exit container*/
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
-.carouselContainer {
+/*Adjusting slideshow container for size and aligment*/
+.slidesContainer {
   display: flex;
-  height: 60%;
-  margin: 50px;
+  height: 70%;
+  width: 100%;
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+}
+/*Making a container so that the parent of arrow is "absolute"
+and be able to reposition them accordingly*/
+.slides {
+  position: absolute;
+}
+
+/* Style previous and next buttons */
+.next,
+.previous {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.next:hover,
+.previous:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.previous {
+  left: 0%;
+  transform: translateY(-50%);
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*mobile layout*/
 @media screen and (max-width: 500px) {
