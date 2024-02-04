@@ -89,14 +89,14 @@ prevButton.forEach(function (element) {
 
 function setImageLoc(buttonId) {
   if (buttonId === "nextLoc" || buttonId === "prevLoc") {
-    let imageLocSource = "/Images/dice" + currentSlideLoc + ".png";
+    let imageLocSource = "Images/dice" + currentSlideLoc + ".png";
     imageLoc.setAttribute("src", imageLocSource);
     imageLoc.classList.add("fade");
     setTimeout(() => {
       imageLoc.classList.remove("fade");
     }, 1500);
   } else if (buttonId === "nextRoom" || buttonId === "prevRoom") {
-    let imageRoomsSource = "/Images/dice" + currentSlideRooms + ".png";
+    let imageRoomsSource = "Images/dice" + currentSlideRooms + ".png";
     imageRooms.setAttribute("src", imageRoomsSource);
     imageRooms.classList.add("fade");
     setTimeout(() => {
