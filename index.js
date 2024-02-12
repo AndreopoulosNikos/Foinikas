@@ -104,5 +104,3 @@ function setImageLoc(buttonId) {
     }, 1500);
   }
 }
-
-function ok() {}
