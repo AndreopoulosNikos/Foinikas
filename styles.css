@@ -130,6 +130,7 @@ and be able to reposition them accordingly*/
 .slides {
   position: absolute;
   max-width: 50%;
+  min-width: 800px;
 }
 
 /* Style previous and next buttons */
@@ -198,6 +199,7 @@ and be able to reposition them accordingly*/
   margin: 0%;
   width: 40%;
   height: 30%;
+  min-height: 150px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -259,6 +261,7 @@ and be able to reposition them accordingly*/
   }
   .slides {
     max-width: 90%;
+    min-width: 0px;
   }
   .slidesContainer p {
     width: 75%;
@@ -266,5 +269,6 @@ and be able to reposition them accordingly*/
     height: 40%;
     left: 13%;
     bottom: -30%;
+    min-height: 0px;
   }
 }
