@@ -129,7 +129,7 @@ img {
 and be able to reposition them accordingly*/
 .slides {
   position: absolute;
-  max-width: 53%;
+  max-width: 50%;
 }
 
 /* Style previous and next buttons */
@@ -202,9 +202,10 @@ and be able to reposition them accordingly*/
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+  overflow: auto;
 }
 /*mobile layout*/
 @media screen and (max-width: 500px) {
