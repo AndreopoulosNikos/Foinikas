@@ -257,7 +257,7 @@ and be able to reposition them accordingly*/
     grid-column: 2/14;
   }
   .slides {
-    max-width: 95%;
+    max-width: 90%;
   }
   .slidesContainer p {
     width: 75%;
