@@ -129,6 +129,7 @@ img {
 and be able to reposition them accordingly*/
 .slides {
   position: absolute;
+  max-width: 53%;
 }
 
 /* Style previous and next buttons */
@@ -186,6 +187,25 @@ and be able to reposition them accordingly*/
   grid-column: 5/12;
   font-size: 2rem;
 }
+
+.slidesContainer p {
+  border: black solid 2px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: -20%;
+  left: 30%;
+  margin: 0%;
+  width: 40%;
+  height: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
 /*mobile layout*/
 @media screen and (max-width: 500px) {
   #home {
@@ -199,11 +219,13 @@ and be able to reposition them accordingly*/
   #location {
     background-image: url(Images/pagesMobile.png);
     background-attachment: local;
+    height: 60vh;
   }
 
   #rooms {
     background-image: url(Images/pagesMobile.png);
     background-attachment: local;
+    height: 60vh;
   }
 
   #info {
@@ -233,5 +255,15 @@ and be able to reposition them accordingly*/
     margin-top: 10%;
     font-size: 1.3rem;
     grid-column: 2/14;
+  }
+  .slides {
+    max-width: 95%;
+  }
+  .slidesContainer p {
+    width: 75%;
+    font-size: 0.8em;
+    height: 40%;
+    left: 13%;
+    bottom: -30%;
   }
 }
