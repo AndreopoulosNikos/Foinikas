@@ -71,9 +71,6 @@ nextButton.forEach(function (element) {
   element.addEventListener("click", function () {
     addSlideIndex(element.id, 1);
     setImageLoc(element.id);
-    console.log(element.id);
-    console.log(currentSlideLoc);
-    console.log(currentSlideRooms);
   });
 });
 
@@ -81,9 +78,6 @@ prevButton.forEach(function (element) {
   element.addEventListener("click", function () {
     addSlideIndex(element.id, -1);
     setImageLoc(element.id);
-    console.log(element.id);
-    console.log(currentSlideLoc);
-    console.log(currentSlideRooms);
   });
 });
 
@@ -101,6 +95,6 @@ function setImageLoc(buttonId) {
     imageRooms.classList.add("fade");
     setTimeout(() => {
       imageRooms.classList.remove("fade");
-    }, 1500);
+    }, 2000);
   }
 }
