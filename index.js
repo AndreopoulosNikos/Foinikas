@@ -49,18 +49,18 @@ const imageRooms = document.querySelector("#roomsImg");
 
 function addSlideIndex(buttonId, direction) {
   if (buttonId === "nextLoc" || buttonId === "prevLoc") {
-    if (currentSlideLoc == 6 && direction == 1) {
+    if (currentSlideLoc == 4 && direction == 1) {
       currentSlideLoc = 1;
     } else if (currentSlideLoc == 1 && direction == -1) {
-      currentSlideLoc = 6;
+      currentSlideLoc = 4;
     } else {
       currentSlideLoc += direction;
     }
   } else if (buttonId === "nextRoom" || buttonId === "prevRoom") {
-    if (currentSlideRooms == 6 && direction == 1) {
+    if (currentSlideRooms == 12 && direction == 1) {
       currentSlideRooms = 1;
     } else if (currentSlideRooms == 1 && direction == -1) {
-      currentSlideRooms = 6;
+      currentSlideRooms = 12;
     } else {
       currentSlideRooms += direction;
     }
@@ -89,14 +89,14 @@ prevButton.forEach(function (element) {
 
 function setImageLoc(buttonId) {
   if (buttonId === "nextLoc" || buttonId === "prevLoc") {
-    let imageLocSource = "Images/dice" + currentSlideLoc + ".png";
+    let imageLocSource = "Images/Location/Image" + currentSlideLoc + ".jpg";
     imageLoc.setAttribute("src", imageLocSource);
     imageLoc.classList.add("fade");
     setTimeout(() => {
       imageLoc.classList.remove("fade");
     }, 1500);
   } else if (buttonId === "nextRoom" || buttonId === "prevRoom") {
-    let imageRoomsSource = "Images/dice" + currentSlideRooms + ".png";
+    let imageRoomsSource = "Images/Rooms/Image" + currentSlideRooms + ".jpg";
     imageRooms.setAttribute("src", imageRoomsSource);
     imageRooms.classList.add("fade");
     setTimeout(() => {

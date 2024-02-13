@@ -3,7 +3,7 @@ body {
 }
 /*Basic Homepage styling*/
 #home {
-  background-image: url(Images/homePage.png);
+  background-image: url(Images/homePage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -14,7 +14,7 @@ body {
 
 /*Basic location page styling*/
 #location {
-  background-image: url(Images/pages.png);
+  background-image: url(Images/pages.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
 
 /*Basic rooms page styling*/
 #rooms {
-  background-image: url(Images/pages.png);
+  background-image: url(Images/pages.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -36,7 +36,7 @@ body {
 
 /*Basic info page styling*/
 #info {
-  background-image: url(Images/infoPage.png);
+  background-image: url(Images/infoPage.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -212,7 +212,7 @@ and be able to reposition them accordingly*/
 /*mobile layout*/
 @media screen and (max-width: 500px) {
   #home {
-    background-image: url(Images/homeMobile.png);
+    background-image: url(Images/homeMobile.jpg);
     background-attachment: local;
     display: flex;
     align-items: center;
@@ -220,19 +220,19 @@ and be able to reposition them accordingly*/
   }
 
   #location {
-    background-image: url(Images/pagesMobile.png);
+    background-image: url(Images/pagesMobile.jpg);
     background-attachment: local;
     height: 60vh;
   }
 
   #rooms {
-    background-image: url(Images/pagesMobile.png);
+    background-image: url(Images/pagesMobile.jpg);
     background-attachment: local;
     height: 60vh;
   }
 
   #info {
-    background-image: url(Images/infoMobile.png);
+    background-image: url(Images/infoMobile.jpg);
     background-attachment: local;
   }
 
